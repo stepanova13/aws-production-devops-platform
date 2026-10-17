@@ -1,5 +1,24 @@
-venv/
-__pycache__/
-*.pyc
+
+# Git
 .git/
 .gitignore
+
+# Python virtual environments (any directory)
+**/venv/
+**/.venv/
+venv/
+.venv/
+
+# Python cache files
+**/__pycache__/
+**/*.py[cod]
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Terraform generated files
+**/.terraform/
+*.tfstate
+*.tfstate.*
